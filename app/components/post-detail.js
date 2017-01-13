@@ -6,10 +6,9 @@ export default Ember.Component.extend({
       if (confirm('Are your sure you want to delete this entry?')){
         this.sendAction('destroyPost', post);
       }
+    },
+    destroyResponse(response) {
+      this.sendAction('destroyResponse', response);
     }
-    // ,
-    // destroyResponse(response) {
-    //   this.sendAction('destroyResponse', response);
-    // }
   }
 });
