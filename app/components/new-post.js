@@ -6,6 +6,9 @@ actions: {
   postFormShow() {
     this.set('addNewPost', true);
   },
+  postFormHide() {
+    this.set('addNewPost', false);
+  },
   savePost1(){
     var params = {
       question: this.get('question'),
