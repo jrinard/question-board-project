@@ -1,4 +1,3 @@
-
 *{
   font-family: 'Open Sans', sans-serif;
 }
@@ -10,10 +9,20 @@ h1,h2,h3,h4{
 li {
   list-style-type: none;
 }
+
 left-image, img {
   height: 250px;
   margin-right: 20px;
   margin-bottom: 15px;
+}
+
+footer {
+  text-align: center;
+  color: #2d7fdb;
+  font-size: 1em;
+  padding: 5px;
+  clear:both;
+  border-top: 3px solid #2d7fdb;
 }
 
 #new-post-form{
@@ -21,12 +30,14 @@ left-image, img {
   padding: 20px;
   width: 300px;
 }
+
 #new-response-form{
   background-color: #d2d2d2;
   padding: 20px;
   width: 300px;
   margin-right: 400px;
 }
+
 #bg {
   background-image: url('/assets/images/bg.png');
   height: 400px;
@@ -36,7 +47,6 @@ left-image, img {
   border-radius: 0px 0px 10px 10px;
   position:relative;
 }
-/*http://orig06.deviantart.net/0b70/f/2014/134/3/5/the_avengers_by_flowmediaproductions-d7ibyms.png*/
 
 .title-text {
   position: absolute;
@@ -49,6 +59,7 @@ left-image, img {
     -1px 1px 0 #fff,
     1px 1px 0 #fff;
 }
+
 .detail-height {
   min-height: 290px;
 }
@@ -58,23 +69,9 @@ left-image, img {
   margin-right: 20px;
 }
 
-#comment-bottom {
-  clear:both;
-}
-
 .nav {
   border-bottom: 3px solid #2d7fdb;
 }
-
-footer {
-  text-align: center;
-  color: #2d7fdb;
-  font-size: 1em;
-  padding: 5px;
-  clear:both;
-  border-top: 3px solid #2d7fdb;
-}
-
 
 .button-up {
   margin-top: -117px;
@@ -85,7 +82,6 @@ footer {
   margin-top: -54px;
   float: left;
 }
-
 
 a:link {
   list-style-type: none;

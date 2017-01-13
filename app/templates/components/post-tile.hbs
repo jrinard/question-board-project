@@ -1,14 +1,9 @@
 {{#link-to 'post' post.id}}
-
-<div class="well main-box pull-left">
-<div class="left-image">
-
-</div>
-<div id="right-post-detail">
-  <span class="pull-left"><img src={{post.image}}/></span><br><br>
-  <h3>{{post.question}}</h3><br>
-
-  <span class="">By {{post.author}}</span>
-</div>
-</div>
+  <div class="well main-box pull-left">
+    <div id="right-post-detail">
+      <span class="pull-left"><img src={{post.image}}/></span><br><br>
+      <h3>{{post.question}}</h3><br>
+      <span>By {{post.author}}</span>
+    </div>
+  </div>
 {{/link-to}}

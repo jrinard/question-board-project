@@ -33,7 +33,7 @@ export default Ember.Route.extend({
       this.transitionTo('post', post);
     },
     destroyResponse(response) {
-      response.destroyRecord(); /// needs to stay record
+      response.destroyRecord();
       this.transitionTo('index');
     }
   }
