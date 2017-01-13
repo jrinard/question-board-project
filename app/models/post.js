@@ -5,5 +5,5 @@ export default DS.Model.extend({
   author: DS.attr(),
   note: DS.attr(),
   image: DS.attr(),
-  responses: DS.hasMany('response', { async: true })////HERE!!!!!
+  responses: DS.hasMany('response', { async: true })
 });
