@@ -1,0 +1,69 @@
+li {
+  list-style-type: none;
+}
+left-image, img {
+  height: 250px;
+  margin-right: 20px;
+}
+
+#right-post-detail {
+height: 350px;
+}
+
+#new-post-form{
+  background-color: #d2d2d2;
+  padding: 20px;
+  width: 300px;
+}
+#bg {
+  background-image: url('http://orig06.deviantart.net/0b70/f/2014/134/3/5/the_avengers_by_flowmediaproductions-d7ibyms.png');
+  height: 200px;
+  background-size: 1200px 569px;
+  background-position: center top;
+  background-repeat: no-repeat;
+  border-radius: 0px 0px 10px 10px;
+}
+
+
+
+.main-box {
+  width: 550px;
+  margin-right: 20px;
+}
+
+#comment-bottom {
+  clear:both;
+}
+
+.post-title {
+  font-size: 2em;
+}
+
+.button-up {
+  margin-top: -10px;
+  margin-right: 20px;
+}
+
+a:link {
+  list-style-type: none;
+  text-decoration: none;
+    color: #222;
+}
+
+a:active {
+  list-style-type: none;
+  text-decoration: none;
+  color: #000;
+}
+
+a:visited {
+  list-style-type: none;
+  text-decoration: none;
+  color: #222;
+}
+
+a:hover {
+  list-style-type: none;
+  text-decoration: none;
+  color: #666;
+}
