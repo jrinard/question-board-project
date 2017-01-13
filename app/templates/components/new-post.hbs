@@ -1,0 +1,26 @@
+{{#if addNewPost}}
+<div id="new-post-form" class="well">
+  <form>
+    <div  class="form-group">
+      <label for="type">Question</label>
+      {{input class="form-control" value=question id="question"}}
+    </div>
+    <div  class="form-group">
+      <label for="type">Author</label>
+      {{input class="form-control" value=author id="author"}}
+    </div>
+    <div  class="form-group">
+      <label for="type">Notes</label>
+      {{input class="form-control" value=note id="note"}}
+    </div>
+    <div  class="form-group">
+      <label for="image">Image URL</label>
+      {{input class="form-control" value=image id="image"}}
+    </div>
+       <button class="btn btn-success"{{action 'savePost1'}}>Save</button>
+  </form>
+</div>
+{{else}}
+<button class="btn btn-success"{{action 'postFormShow'}}>New Post</button>
+
+{{/if}}
