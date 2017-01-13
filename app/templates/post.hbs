@@ -1,13 +1,12 @@
-<div class="">
+
 {{update-post post=model update="update"}}<br>
+
+<div class="button-answer">
+{{new-response saveResponse="saveResponse" post=model}}
 </div>
 
-<h2>{{model.question}}</h2>
+
+<h2>Question Details</h2>
 
 
 {{post-detail post=model destroyPost="destroyPost" destroyResponse="destroyResponse"}}
-
-
-<div class="pull-right">
-{{new-response saveResponse="saveResponse" post=model}}
-</div>

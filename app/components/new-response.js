@@ -6,6 +6,9 @@ export default Ember.Component.extend({
     responseFormShow() {
       this.set('addNewResponse', true);
     },
+    responseFormHide() {
+      this.set('addNewResponse', false);
+    },
     saveResponse() {
      var params = {
        answer: this.get('answer'),

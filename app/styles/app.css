@@ -6,10 +6,6 @@ left-image, img {
   margin-right: 20px;
 }
 
-#right-post-detail {
-height: 350px;
-}
-
 #new-post-form{
   background-color: #d2d2d2;
   padding: 20px;
@@ -36,14 +32,18 @@ height: 350px;
   clear:both;
 }
 
-.post-title {
-  font-size: 2em;
-}
+
 
 .button-up {
-  margin-top: -10px;
-  margin-right: 20px;
+  margin-top: -117px;
 }
+
+.button-answer {
+  margin-left: 140px;
+  margin-top: -54px;
+  float: left;
+}
+
 
 a:link {
   list-style-type: none;
