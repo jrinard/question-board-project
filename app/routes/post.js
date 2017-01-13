@@ -22,20 +22,19 @@ export default Ember.Route.extend({
         return post.destroyRecord();
       });
       this.transitionTo('index');
+    },
+    saveResponse(params) {
+      var newResponse = this.store.createRecord('response', params);
+      var post = params.post;
+      post.get('responses').addObject(newResponse);
+      newResponse.save().then(function(){
+        return post.save();
+      });
+      this.transitionTo('post', post);
+    },
+    destroyResponse(response) {
+      response.destroyRecord(); /// needs to stay record
+      this.transitionTo('index');
     }
-    // ,
-  //   saveComment(params) {
-  //     var newComment = this.store.createRecord('comment', params);
-  //     var post = params.post;
-  //     post.get('comments').addObject(newComment);
-  //     newComment.save().then(function(){
-  //       return post.save();
-  //     });
-  //     this.transitionTo('post', post);
-  //   },
-  //   destroyComment(comment) {
-  //     comment.destroyRecord(); /// needs to stay record
-  //     this.transitionTo('index');
-  //   }
   }
 });
