@@ -1,11 +1,16 @@
 <div class="container">
   <div id="bg">
+    <div class="title-text">
+      <h1>Superhero Trivia Board</h1>
+    </div>
   </div>
-    <h1>Superhero Trivia Board</h1>
-  <div class="nav"><hr>
-    {{#link-to 'index'}}Home{{/link-to}}
-   </div><hr>
+
+  <div class="nav">
+    {{#link-to 'index'}}<h2>Home</h2>{{/link-to}}
+  </div><br>
   {{outlet}}
-  <hr>
-  <footer>© 2017</footer>
+
+    <footer>© 2017 Joshua Rinard</footer>
+
+
 </div>
