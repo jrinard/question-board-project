@@ -4,7 +4,7 @@ export default Ember.Route.extend({
   model() {
     return Ember.RSVP.hash({
       posts: this.store.findAll('post'),
-      // response: this.store.findAll('response')
+      response: this.store.findAll('response')
     });
   },
   actions: {
