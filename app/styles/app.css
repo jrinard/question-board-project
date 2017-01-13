@@ -16,14 +16,14 @@ height: 350px;
   width: 300px;
 }
 #bg {
-  background-image: url('http://orig06.deviantart.net/0b70/f/2014/134/3/5/the_avengers_by_flowmediaproductions-d7ibyms.png');
+  background-image: url('/assets/images/bg.png');
   height: 200px;
   background-size: 1200px 569px;
   background-position: center top;
   background-repeat: no-repeat;
   border-radius: 0px 0px 10px 10px;
 }
-
+/*http://orig06.deviantart.net/0b70/f/2014/134/3/5/the_avengers_by_flowmediaproductions-d7ibyms.png*/
 
 
 .main-box {
