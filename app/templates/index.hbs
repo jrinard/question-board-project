@@ -8,13 +8,3 @@
 {{#each model.posts as |post|}}
 {{post-tile post=post}}
 {{/each}}
-
-
-<div id="comment-bottom">
-  <h3>Answers</h3>
-
-  {{#each model.responses as |response|}}
-    <li>{{response.answer}} - by {{response.author}}</li>
-  {{/each}}
-
-</div>
