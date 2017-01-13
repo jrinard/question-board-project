@@ -4,8 +4,8 @@ export default Ember.Route.extend({
   model(params){
     return this.store.findRecord('post', params.post_id);
   }
-  // ,
-  // actions:{
+  ,
+  actions:{
   //   update(post, params){
   //     Object.keys(params).forEach(function (key){
   //       if (params[key] !== undefined){
@@ -15,15 +15,16 @@ export default Ember.Route.extend({
   //     post.save();
   //     this.transitionTo('index');
   //   },
-  //   destroyPost(post){
-  //     var comment_deletions = post.get('comments').map(function(comment){
-  //       return comment.destroyRecord();
-  //     });
-  //     Ember.RSVP.all(comment_deletions).then(function(){
-  //       return post.destroyRecord();
-  //     });
-  //     this.transitionTo('index');
-  //   },
+    destroyPost(post){
+      var response_deletions = post.get('responses').map(function(response){
+        return response.destroyRecord();
+      });
+      Ember.RSVP.all(response_deletions).then(function(){
+        return post.destroyRecord();
+      });
+      this.transitionTo('index');
+    }
+    // ,
   //   saveComment(params) {
   //     var newComment = this.store.createRecord('comment', params);
   //     var post = params.post;
@@ -37,5 +38,5 @@ export default Ember.Route.extend({
   //     comment.destroyRecord(); /// needs to stay record
   //     this.transitionTo('index');
   //   }
-  // }
+  }
 });
