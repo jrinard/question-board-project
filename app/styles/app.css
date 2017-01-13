@@ -15,7 +15,6 @@ left-image, img {
   margin-right: 20px;
   margin-bottom: 15px;
 }
-
 footer {
   text-align: center;
   color: #2d7fdb;
@@ -104,5 +103,5 @@ a:visited {
 a:hover {
   list-style-type: none;
   text-decoration: none;
-  color: #666;
+  color: #2d7fdb;
 }
